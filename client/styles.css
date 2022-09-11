@@ -54,6 +54,13 @@ input[type="text"] {
   background-color: snow;
 }
 
+#instruction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
 #movie-container {
   width: 85%;
 }

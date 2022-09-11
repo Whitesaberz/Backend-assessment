@@ -1,5 +1,6 @@
 const complimentBtn = document.getElementById("complimentButton");
 const fortuneBtn = document.getElementById("fortuneButton");
+const resetBtn = document.getElementById("resetButton");
 
 const heroesContainer = document.querySelector("#heroes-container");
 const form = document.querySelector("form");

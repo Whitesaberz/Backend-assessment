@@ -21,10 +21,16 @@ module.exports = {
     heroID++;
   },
   updateHero: (req, res) => {
-    let { id } = req.params;
-    let { type } = req.body;
-    let index = heroes.findIndex((elem) => +elem.id === +id);
-    console.log(type);
+    let existingHeroName = req.params.name;
+    let newUsername = req.body.username;
+    for (let i = 0; i < users.length; i++) {
+      if (users[i].username === existingHeroName) {
+        user[i].username = newUsername;
+        res.status(200).send("Hero updated.");
+        return;
+      }
+    }
+    res.status(400).send("Hero not found.");
   },
   getCompliment: (req, res) => {
     const compliments = [
