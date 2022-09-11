@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Aladdin",
+    "movie": "Aladdin",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Aladdin_Disney_pose.png/220px-Aladdin_Disney_pose.png"
+  },
+  {
+    "id": 2,
+    "name": "Jasmine",
+    "movie": "Aladdin",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/7/71/Princess_Jasmine_disney.png"
+  },
+  {
+    "id": 3,
+    "name": "Rapunzel",
+    "movie": "Tangled",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/6/6a/Rapunzel_tangled.png"
+  },
+  {
+    "id": 4,
+    "name": "Flynn",
+    "movie": "Tangled",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/6/6a/Rapunzel_tangled.png"
+  },
+  {
+    "id": 5,
+    "name": "Beast",
+    "movie": "Beauty and the Beast",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/4/4a/Disney-beast.PNG"
+  },
+
+  {
+    "id": 6,
+    "name": "Belle",
+    "movie": "Beauty and the Beast",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/d/d5/Belle_disney.png"
+  },
+
+  {
+    "id": 7,
+    "name": "Ariel",
+    "movie": "The Little Mermaid",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/7/77/Ariel_disney.png"
+  },
+
+  {
+    "id": 8,
+    "name": "Eric",
+    "movie": "The Little Mermaid",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/6/6e/PrinceEric.png"
+  },
+  {
+    "id": 9,
+    "name": "Mike",
+    "movie": "Monsters, Inc.",
+    "imageURL": "https://static.wikia.nocookie.net/monstersincmovies/images/a/ab/Mikewazowski.png/revision/latest?cb=20131214051903"
+  },
+  {
+    "id": 10,
+    "name": "Sully",
+    "movie": "Monsters, Inc.",
+    "imageURL": "https://static.wikia.nocookie.net/monstersincmovies/images/0/09/Sulley_002.jpg/revision/latest?cb=20130512141939"
+  }
+]
