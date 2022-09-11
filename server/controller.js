@@ -1,7 +1,31 @@
-let heroes = require("./db.json");
+const heroes = require("./db.json");
 let heroID = 11;
 
 module.exports = {
+  getHeroes: (req, res) => res.status(200).send(heroes),
+  deleteHero: (req, res) => {
+    let index = heroes.findIndex((elem) => elem.id === +req.params.id);
+    heroes.splice(index, 1);
+    res.status(200).send(heroes);
+  },
+  addHero: (req, res) => {
+    let { name, movie, imageURL } = req.body;
+    let newHero = {
+      id: heroID,
+      name,
+      movie,
+      imageURL,
+    };
+    heroes.push(newHero);
+    res.status(200).send(heroes);
+    heroID++;
+  },
+  updateHero: (req, res) => {
+    let { id } = req.params;
+    let { type } = req.body;
+    let index = heroes.findIndex((elem) => +elem.id === +id);
+    console.log(type);
+  },
   getCompliment: (req, res) => {
     const compliments = [
       "Gee, you're a smart cookie!",
@@ -30,31 +54,5 @@ module.exports = {
     let randomFortune = fortunes[randomIndex];
 
     res.status(200).send(randomFortune);
-  },
-  getHeroes: (req, res) => {
-    res.status(200).send(heroes);
-  },
-  deleteHero: (req, res) => {
-    let index = heroes.findIndex((elem) => elem.id === +req.params.id);
-    heroes.splice(index, 1);
-    res.status(200).send(heroes);
-  },
-  addHero: (req, res) => {
-    const { name, movie, imageURL } = req.body;
-    let newHero = {
-      id: heroID,
-      name,
-      movie,
-      imageURL,
-    };
-    heroes.push(newHero);
-    heroID++;
-    res.status(200).send(heroes);
-  },
-  updateHero: (req, res) => {
-    const { id } = req.params;
-    const { type } = req.body;
-    let index = heroes.findIndex((elem) => +elem.id === +id);
-    console.log(type);
   },
 };

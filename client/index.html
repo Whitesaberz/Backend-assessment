@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,22 +7,24 @@
     <title>Back End Assessment</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <header>
-    <h1>Bring a Hero!</h1>
-  </header>
-  <body class="container">
-    <button id="complimentButton">Get a compliment!</button>
-    <button id="fortuneButton">Read your fortune!</button>
-
-    <form>
-      <h3>Don't see one you want? Add a Hero!</h3>
-      <input type="text" id="name" placeholder="Hero name?" />
-      <input type="text" id="movie" placeholder="From what movie?" />
-      <input type="text" id="img" placeholder="Paste an image URL" />
-      <button>add hero</button>
-    </form>
-
-    <section id="heroes-container"></section>
+  <body>
+    <header>
+      <button id="complimentButton">Get a compliment!</button>
+      <h1>Bring a hero or two to help you through DevMountain!</h1>
+      <button id="fortuneButton">Read your fortune!</button>
+    </header>
+    <main>
+      <div>
+        <form>
+          <h3>Don't see one you want? Add a Hero!</h3>
+          <input type="text" id="name" placeholder="Hero name?" />
+          <input type="text" id="movie" placeholder="From what movie?" />
+          <input type="text" id="img" placeholder="Paste an image URL" />
+          <button>add hero</button>
+        </form>
+      </div>
+      <section id="heroes-container"></section>
+    </main>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>

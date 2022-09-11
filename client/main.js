@@ -4,7 +4,7 @@ const fortuneBtn = document.getElementById("fortuneButton");
 const heroesContainer = document.querySelector("#heroes-container");
 const form = document.querySelector("form");
 
-const baseURL = `http://localhost:4004/api/heroes`;
+const baseURL = `http://localhost:4000/api/heroes`;
 
 const heroesCallback = ({ data: heroes }) => displayHeroes(heroes);
 const errCallback = (err) => console.log(err);
@@ -47,10 +47,8 @@ function createHeroCard(hero) {
 
   heroCard.innerHTML = `<img alt='hero image' src=${hero.imageURL} class="hero-image"/>
     <p class="name">${hero.name}</p>
-    <div class="btns-container">
-        <button onclick="updateHero(${hero.id}, 'minus')">-</button>
-        <p class="hero-movie">$${hero.movie}</p>
-        <button onclick="updateHouse(${hero.id}, 'plus')">+</button>
+    <div>
+    <p class="hero-movie">"${hero.movie}"</p>
     </div>
     <button onclick="deleteHero(${hero.id})">delete</button>
     `;
@@ -78,6 +76,7 @@ const getFortune = () => {
   });
 };
 
+//Add listeners
 complimentBtn.addEventListener("click", getCompliment);
 fortuneBtn.addEventListener("click", getFortune);
 form.addEventListener("submit", submitHandler);
